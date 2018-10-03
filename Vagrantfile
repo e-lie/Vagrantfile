@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.guest = :debian
 
   config.vm.define "__DOMAIN__" do |__VMNAME__|
-    unstable.vm.box = "e-lie/yunohost-unstable"
-    unstable.vm.network :private_network, ip: "192.168.33.82"
+    __VMNAME__.vm.box = "e-lie/yunohost-unstable"
+    __VMNAME__.vm.network :private_network, ip: "192.168.33.82"
   end
 end
